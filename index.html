@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      width: 720px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    #barrage-content {
+      position: absolute;
+    }
+
+    #video-content {
+      background: black;
+    }
+
+    .new-barrage {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <canvas id="barrage-content"></canvas>
+      <video id="video-content" src="./xxxxxxx.mkv" controls width="720" height="480"></video>
+    </div>
+    <div class="new-barrage">
+      <input type="text" id="text-barrage">
+      <input type="color" id="color-barrage">
+      <input type="range" id="size-barrage" max="40" min="20">
+      <button id="send-barrage">发送弹幕</button>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
